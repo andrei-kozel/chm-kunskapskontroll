@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/index.css" />
@@ -53,9 +53,103 @@
     <section class="about">
       <div class="container">
         <h1 class="about-title">About</h1>
-        <h1 class="about-title">Me</h1>
+        <h1 class="about-title about-title-stroke">Me</h1>
+        <h2 class="about-subtitle">
+          I manufacture a hard copy of your dreams and stories.
+        </h2>
+
+        <div class="row">
+          <h2 class="row-title">Who am I?</h2>
+          <div class="row-content">
+            <p>
+              I am a web developer and designer from Gothenburg, the
+              second-largest city in Sweden. I enjoy building everything from
+              small business sites to rich interactive apps. I primarily use
+              Vue.js and Nuxt.js. If you are interested in working with me, I am
+              currently open to new opportunities. I can solve some of your
+              problems :)
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2 class="row-title">My Services</h2>
+          <div class="row-content">
+            <button class="accordion">
+              Web Development <img src="./images/arrow.svg" alt="" />
+            </button>
+            <div class="accordion-panel">
+              <p>
+                For the past 5 years, I've been forming digital products the
+                likes of interactive experiences, corporate websites, e-commerce
+                or mobile apps for agencies all over the world. From research,
+                user flows, sketches, wireframes to final design systems, user
+                interfaces, motion design and brand guidelines.
+              </p>
+            </div>
+            <hr />
+            <button class="accordion">
+              Web Design <img src="./images/arrow.svg" alt="" />
+            </button>
+            <div class="accordion-panel">
+              <p>
+                For the past 5 years, I've been forming digital products the
+                likes of interactive experiences, corporate websites, e-commerce
+                or mobile apps for agencies all over the world. From research,
+                user flows, sketches, wireframes to final design systems, user
+                interfaces, motion design and brand guidelines.
+              </p>
+            </div>
+            <hr />
+            <button class="accordion">
+              Mobile Development <img src="./images/arrow.svg" alt="" />
+            </button>
+            <div class="accordion-panel">
+              <p>
+                Web Design For the past 5 years, I've been forming digital
+                products the likes of interactive experiences, corporate
+                websites, e-commerce or mobile apps for agencies all over the
+                world. From research, user flows, sketches, wireframes to final
+                design systems, user interfaces, motion design and brand
+                guidelines.
+              </p>
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <div class="row">
+          <h2 class="row-title">Our Testimonials</h2>
+          <div class="row-content">
+            <p>
+              I am a web developer and designer from Gothenburg, the
+              second-largest city in Sweden. I enjoy building everything from
+              small business sites to rich interactive apps. I primarily use
+              Vue.js and Nuxt.js. If you are interested in working with me, I am
+              currently open to new opportunities. I can solve some of your
+              problems :)
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2 class="row-title">Our Clients</h2>
+          <div class="row-content row-content-row">
+            <div class="clients-container">
+              <img src="./images/clients/netlify.png" alt="" />
+            </div>
+            <div class="clients-container">
+              <img src="./images/clients/amazon.png" alt="" />
+            </div>
+
+            <div class="clients-container">
+              <img src="./images/clients/protofire.png" alt="" />
+            </div>
+        </div>
       </div>
     </section>
+
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/accordion.js"></script>
   </body>
-  <script src="./scripts/navigation.js"></script>
 </html>
