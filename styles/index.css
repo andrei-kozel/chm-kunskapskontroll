@@ -1,1 +1,108 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+.header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333;
+}
+
+.header-title {
+  font-size: 3.5rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-title::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 60%;
+  background-color: #333;
+  bottom: 15%;
+  right: -8px;
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+}
+
+.header-subtitle {
+  font-size: 2rem;
+  color: #555;
+}
+
+@media (min-width: 1200px) {
+  .header-title {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-title {
+    font-size: 2.5rem;
+  }
+  .header-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+/*# sourceMappingURL=index.css.map */
