@@ -105,6 +105,7 @@ body {
   padding: 0;
   font-family: 'Lato', sans-serif;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 .container {
