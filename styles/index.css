@@ -466,4 +466,90 @@ hr {
     width: 100%;
   }
 }
+
+.carousel {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.carousel-slide {
+  display: none;
+  padding: 0 40px;
+  min-height: 100px;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.carousel-slide__name {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.carousel-slide__name span {
+  color: #777;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.carousel-controls {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -16px;
+  font-size: 25px;
+  line-height: 25px;
+  color: #555;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel-controls:hover {
+  background-color: #eee;
+}
+
+.carousel-controls__prev {
+  left: 0;
+}
+
+.carousel-controls__next {
+  right: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=index.css.map */
