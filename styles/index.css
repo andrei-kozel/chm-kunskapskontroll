@@ -128,7 +128,7 @@ hr {
   line-height: 3rem;
   padding: 0;
   margin: 0;
-  color: #333;
+  color: #75a99d;
 }
 
 .title-stroke {
@@ -206,7 +206,7 @@ hr {
 }
 
 .navigation ul li a:hover {
-  color: #111;
+  color: #75a99d;
 }
 
 .open {
@@ -338,7 +338,7 @@ hr {
   left: 5px;
   width: 20px;
   height: 3px;
-  background-color: #333;
+  background-color: #75a99d;
 }
 
 .about .row-content {
@@ -379,23 +379,20 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.accordion img {
-  max-width: 16px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  margin-left: 15px;
+.accordion span {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-left: 10px;
+  color: #75a99d;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.accordion-active img {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+.accordion-active span {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .accordion-panel {
@@ -476,11 +473,11 @@ hr {
 
 .carousel-slide {
   display: none;
-  padding: 0 40px;
+  padding: 0 60px;
   min-height: 100px;
   max-height: 0;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
+  -webkit-transition: max-height 0.5s ease-out;
+  transition: max-height 0.5s ease-out;
 }
 
 .carousel-slide__name {
@@ -497,14 +494,14 @@ hr {
 .carousel-controls {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 0;
   width: auto;
-  margin-top: -16px;
+  margin-top: 10px;
   font-size: 25px;
   line-height: 25px;
-  color: #555;
-  width: 30px;
-  height: 30px;
+  color: #75a99d;
+  width: 50px;
+  height: 100%;
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -614,6 +611,121 @@ hr {
         -ms-flex: 100%;
             flex: 100%;
     max-width: 100%;
+  }
+}
+
+.footer {
+  padding: 30px;
+  text-align: center;
+  font-weight: 300;
+  color: #bbb;
+}
+
+.contacts {
+  margin-bottom: 100px;
+}
+
+.contacts-content {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contacts-form {
+  width: 40%;
+}
+
+.contacts-form input,
+.contacts-form textarea {
+  margin-top: 20px;
+  display: block;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  letter-spacing: 0;
+  width: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 46px;
+  height: 46px;
+  background: transparent;
+  outline: none;
+  padding: 0 0 3px;
+  color: #333;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.contacts-form textarea {
+  height: 100px;
+  line-height: 20px;
+  resize: none;
+}
+
+.contacts-form input[type='submit'] {
+  background-color: #d3e4e0;
+  border: 1px solid #c3c3c3;
+  color: #333;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 30%;
+  margin: 20px auto 0;
+}
+
+.contacts-form input[type='submit']:hover {
+  background-color: #b4d0ca;
+}
+
+.contacts-details {
+  width: 40%;
+}
+
+.contacts-details__block {
+  margin-top: 30px;
+}
+
+.contacts-details__block h2 {
+  color: #333;
+}
+
+.contacts-details__block a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 300;
+  border-bottom: 3px solid #75a99d;
+  border-width: 0px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  margin-right: 4px;
+}
+
+.contacts-details__block a:hover {
+  border-width: 3px;
+}
+
+@media screen and (max-width: 800px) {
+  .contacts-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts-form {
+    width: 100%;
+  }
+  .contacts-details {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=index.css.map */

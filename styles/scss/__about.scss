@@ -36,7 +36,7 @@
         left: 5px;
         width: 20px;
         height: 3px;
-        background-color: #333;
+        background-color: #75a99d;
       }
     }
 
@@ -69,18 +69,17 @@
   background-color: white;
   font-weight: 700;
   display: flex;
-  align-items: center;
 
-  img {
-    max-width: 16px;
-    transform: rotate(90deg);
-    margin-left: 15px;
+  span {
+    transform: rotate(-90deg);
+    margin-left: 10px;
+    color: #75a99d;
     transition: all 0.2s ease-in-out;
   }
 
   &-active {
-    img {
-      transform: rotate(-90deg);
+    span {
+      transform: rotate(90deg);
     }
   }
 
