@@ -200,11 +200,14 @@
         <h1 class="title title-stroke">Contacts</h1>
         <div class="contacts-content">
           <div class="contacts-form">
-            <form action="">
-              <input type="text" placeholder="Your name">
-              <input type="email" placeholder="Your email">
-              <input type="text" placeholder="Your phone">
-              <textarea name="" id="" cols="30" rows="10" placeholder="Tell me about your project"></textarea>
+            <form action="/" method="GET" id="form">
+              <input id="name" type="text" placeholder="Your name">
+              <p class="error error-name">Name is required</p>
+              <input id="email" type="email" placeholder="Your email">
+              <p class="error error-email">You have entered an invalid email address!</p>
+              <input id="phone" type="number" placeholder="Your phone">
+              <p class="error error-phone">You have entered an invalid phone number!</p>
+              <textarea name="" id="text" cols="30" rows="10" placeholder="Tell me about your project"></textarea>
               <input type="submit" value="Send">
             </form>
           </div>
@@ -233,5 +236,7 @@
     <script src="./scripts/navigation.js"></script>
     <script src="./scripts/accordion.js"></script>
     <script src="./scripts/carousel.js"></script>
+    <script src="./scripts/formValidation.js"></script>
+
   </body>
 </html>
